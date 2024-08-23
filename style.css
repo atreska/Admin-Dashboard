@@ -1,0 +1,74 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body {
+    height: 100vh;
+}
+
+.main-container {
+    border: 2px solid blue;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 300px repeat(2, 1fr);
+    grid-template-rows: 150px 3fr;
+
+    grid-template-areas:
+        "s h"
+        "s m"
+        "s m";
+
+}
+
+
+.sidebar {
+    border: 2px solid red;
+    background-color: #f8f9fa;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 1.5rem;
+    grid-area: s;
+
+}
+
+.sidebar div,
+.sidebar ul:nth-child(2) {
+    padding-bottom: 2.7em;
+}
+
+.sidebar div,
+.sidebar ul li {
+    display: grid;
+    grid-template-columns: repeat(2, 45px);
+    align-items: center;
+}
+
+.sidebar div img {
+    width: 36px;
+}
+
+.sidebar div {
+    gap: 4px;
+}
+
+.sidebar ul {
+    padding-left: .2em;
+}
+
+
+.sidebar ul li {
+    padding-bottom: 1em;
+}
+
+.sidebar-icon {
+    width: 25px;
+}
+
+.sidebar a,
+.sidebar ul li {
+    color: black;
+}
