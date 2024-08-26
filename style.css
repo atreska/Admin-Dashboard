@@ -14,14 +14,20 @@ body {
     border: 2px solid blue;
     height: 100%;
     display: grid;
-    grid-template-columns: 300px repeat(2, 1fr);
+    grid-template-columns: 300px repeat(12, 1fr);
     grid-template-rows: 150px 3fr;
 
     grid-template-areas:
-        "s h"
-        "s m"
-        "s m";
+        "s h h h h h h h h h h h h"
+        "s c c c c c c c c c c c c"
+        "s c c c c c c c c c c c c";
 
+}
+
+.header {
+    grid-area: h;
+    background-color: white;
+    border: 2px solid red;
 }
 
 
