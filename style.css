@@ -30,6 +30,12 @@ body {
     border: 2px solid red;
 }
 
+.content {
+    grid-area: c;
+    background-color: #212529;
+    border: 1px solid yellow;
+}
+
 
 .sidebar {
     border: 2px solid red;
