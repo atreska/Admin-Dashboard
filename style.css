@@ -88,6 +88,7 @@ body {
     display: grid;
     grid-template-columns: 80px 250px;
     align-items: center;
+    padding-bottom: 10px;
 }
 
 .welcome h2 {
@@ -108,9 +109,6 @@ body {
     grid-template-columns: repeat(3, 100px);
     gap: 20px;
     align-content: center;
-    padding-top: 5px;
-
-
 }
 
 
