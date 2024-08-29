@@ -29,7 +29,7 @@ body {
     grid-area: h;
     background-color: white;
     border: 2px solid red;
-    padding: 0 1.5rem;
+    padding: 0 2rem;
 
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -63,12 +63,16 @@ body {
 
 .account {
     display: grid;
-    grid-template-columns: 25px 50px 150px;
+    grid-template-columns: 25px 35px 100px;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
     gap: 20px;
 
 
+}
+
+.account h2 {
+    font-size: 16px;
 }
 
 .account .notification-icon {
@@ -76,9 +80,46 @@ body {
 }
 
 .account .account-photo {
-    width: 50px;
-
+    width: 35px;
     border-radius: 50%;
+}
+
+.welcome {
+    display: grid;
+    grid-template-columns: 80px 250px;
+    align-items: center;
+}
+
+.welcome h2 {
+    font-size: 20px;
+}
+
+.welcome p {
+    font-size: 12px;
+}
+
+.welcome img {
+    width: 60px;
+    border-radius: 50%;
+}
+
+.header-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 20px;
+    align-content: center;
+    padding-top: 5px;
+
+
+}
+
+
+.buttons {
+    border: none;
+    background-color: #6c757d;
+    color: white;
+    padding: .6em 1.5em;
+    border-radius: 200px;
 }
 
 
