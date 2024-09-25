@@ -11,13 +11,15 @@ body {
 }
 
 .main-container {
+    resize: both;
+    overflow: auto;
     height: 100%;
     display: grid;
     grid-template-columns: 230px repeat(12, 1fr);
-    grid-template-rows: 140px 3fr;
+    /* grid-template-rows: 140px 3fr; */
+    grid-template-rows: minmax(140px, 200px) repeat(auto-fit, 1fr);
 
-    grid-template-areas:
-        "s h h h h h h h h h h h h"
+    grid-template-areas: "s h h h h h h h h h h h h"
         "s c c c c c c c c c c c c"
         "s c c c c c c c c c c c c";
 
@@ -27,12 +29,11 @@ body {
 .header {
     grid-area: h;
     background-color: white;
-    padding: 0 2rem;
+    padding: 0 2em 2rem 2em;
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 75px 50px;
     border-bottom: 4px solid #ced4da;
-
 }
 
 .header .search,
@@ -147,7 +148,8 @@ body {
 
     display: grid;
     grid-template-columns: repeat(2, minmax(250px, 1fr));
-    grid-auto-rows: auto;
+    grid-template-rows: repeat(3, minmax(100px, 1fr));
+    grid-auto-rows: 1fr;
     gap: 25px;
 }
 
@@ -159,7 +161,7 @@ body {
 }
 
 .project-description-container {
-    padding: 1em 0;
+    padding-bottom: .8em;
 }
 
 .projects-header,
@@ -183,6 +185,22 @@ body {
     font-size: 14px;
 }
 
+.project-icons {
+    display: grid;
+    grid-template-columns: repeat(3, 20px);
+    gap: 20px;
+    justify-content: end;
+}
+
+.project-icons img {
+    width: 20px;
+}
+
+.announcement-title,
+.announcement-description {
+    padding: .3em;
+}
+
 .announcements-header {
     grid-column: 3/4;
 }
@@ -198,29 +216,47 @@ body {
 
 .announcements-container {
     grid-column: 1;
-    grid-row: 1/9;
+    grid-row: 1/7;
 
     display: grid;
     grid-template-columns: 1fr;
 }
 
+.announcement-title {
+    font-size: 12px;
+    padding-bottom: .1em;
+    font-weight: 700;
+}
+
+.announcement-description {
+    font-size: 10px;
+    color: #6c757d;
+}
+
+.announcement-divider {
+    margin: .3em 0;
+}
+
+
 .trending-header {
-    grid-row: 9 /9;
+    grid-row: 8/8;
     align-self: center;
 }
 
 .trending-container {
     grid-column: 1;
-    grid-row: 10/-1;
+    grid-row: 9/auto;
     display: grid;
     grid-template-columns: 1fr;
 }
 
-.announcements,
+.announcement,
 .trending {
     background-color: white;
     border-radius: 10px;
+    padding: 1em;
 }
+
 
 
 .sidebar {
