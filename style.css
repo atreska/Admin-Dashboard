@@ -171,7 +171,7 @@ body {
 
 .projects-header h3,
 .announcements-header h3,
-.trending-header h3 {
+.chat-header h3 {
     font-size: 17px;
 }
 
@@ -237,27 +237,47 @@ body {
     margin: .3em 0;
 }
 
-
-.trending-header {
-    grid-row: 8/8;
-    align-self: center;
-}
-
-.trending-container {
-    grid-column: 1;
-    grid-row: 9/auto;
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
 .announcement,
-.trending {
+.chatting {
     background-color: white;
     border-radius: 10px;
     padding: 1em;
 }
 
+.chat-header {
+    grid-row: 8/8;
+    align-self: center;
+}
 
+.chat-container {
+    grid-column: 1;
+    grid-row: 9/-1;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.chatting {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    align-items: center;
+    gap: 3px;
+}
+
+.chat-photo {
+    width: 35px;
+    border-radius: 200px;
+    height: 35px;
+}
+
+.chat-description {
+    font-size: .7rem;
+    padding-top: .2em;
+}
+
+.chat-username-link,
+.chat {
+    padding-top: .5em;
+}
 
 .sidebar {
     background-color: #f8f9fa;
