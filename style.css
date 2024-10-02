@@ -72,10 +72,11 @@ body {
 
 .account h2 {
     font-size: 16px;
+    color: black;
 }
 
 .account .notification-icon {
-    width: 25px;
+    width: 20px;
 }
 
 .account .account-photo {
@@ -92,6 +93,10 @@ body {
 
 .welcome h2 {
     font-size: 20px;
+}
+
+.welcome a {
+    color: #6c757d;
 }
 
 .welcome p {
@@ -118,6 +123,10 @@ body {
     color: white;
     padding: .5em 1em;
     border-radius: 200px;
+}
+
+.buttons:hover {
+    cursor: pointer;
 }
 
 
@@ -271,7 +280,7 @@ body {
 
 .chat-description {
     font-size: .7rem;
-    padding-top: .2em;
+    padding-top: .1em;
 }
 
 .chat-username-link,
