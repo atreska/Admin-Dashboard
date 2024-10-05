@@ -11,8 +11,8 @@ This project is an admin panel focusing on using CSS Grid.
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/atreska/Admin-Dashboard)
-- Live Site URL: [Add live site URL here](https://atreska.github.io/Admin-Dashboard/)
+- Solution URL: [Solution](https://github.com/atreska/Admin-Dashboard)
+- Live Site URL: [Visit](https://atreska.github.io/Admin-Dashboard/)
 
 
 ### Built with
